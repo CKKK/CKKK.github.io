@@ -38,6 +38,8 @@ app
     } 
     $scope.$apply();
     console.log($scope.users);
+    ga('send', 'event', 'userlist', 'Click', 'userlist');
+
   };
   ParseSvc.getUsers($scope.sucessCallback);
 }])
